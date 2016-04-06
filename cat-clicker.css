@@ -1,11 +1,17 @@
-table {
-  text-align: center;
+#cats, #cat {
+  display: inline;
 }
 
-td {
+ul {
+  list-style: none;
   padding: 10px;
+  margin: 0px;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 img {
-  height: 200px;
+  height: 400px;
 }
