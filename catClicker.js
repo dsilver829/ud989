@@ -24,6 +24,6 @@ Cat.prototype = {
 };
 
 $(document).ready(function() {
-  var cat = new Cat("Cat");
-  var cat = new Cat("Chewie");
+  new Cat("Cat");
+  new Cat("Chewie");
 });
