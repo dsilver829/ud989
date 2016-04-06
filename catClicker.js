@@ -13,16 +13,17 @@ function Cat(name) {
   $("#counters").append(this.counter);
 };
 
-Cat.prototype.cell = function(text) {
-  return $('<td></td>').text(text);
-};
-
-Cat.prototype.increment = function() {
-  this.count += 1;
-  this.counter.text(this.count.toString());
+Cat.prototype = {
+  cell: function(text) {
+    return $('<td></td>').text(text);
+  },
+  increment: function() {
+    this.count += 1;
+    this.counter.text(this.count.toString());
+  }
 };
 
 $(document).ready(function() {
-  'use strict';
   var cat = new Cat("Cat");
+  var cat = new Cat("Chewie");
 });
